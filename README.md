@@ -24,8 +24,8 @@ The overall feed icon background and individual icon colors may be customized.
   * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).<br>
   * Then install this style using:
     * [userstyles.org](https://userstyles.org/styles/160546/github-feed-icons)
-    * or, add it [manually](https://github.com/StylishThemes/GitHub-Feed-Icons/blob/master/gitHub-feed-icons.user.css) into the editor.
-* Or, **[install directly](https://raw.githubusercontent.com/StylishThemes/GitHub-Feed-Icons/master/gitHub-feed-icons.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+    * or, add it [manually](https://github.com/StylishThemes/GitHub-Feed-Icons/blob/master/github-feed-icons.user.css) into the editor.
+* Or, **[install directly](https://raw.githubusercontent.com/StylishThemes/GitHub-Feed-Icons/master/github-feed-icons.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
 
 ## Updating
 
