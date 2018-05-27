@@ -1,0 +1,11 @@
+{
+  "name": "github-feed-icons",
+  "version": "1.0.0",
+  "description": "Add icons to the GitHub news feed",
+  "license": "CC-BY-SA-4.0",
+  "repository": "https://github.com/StylishThemes/GitHub-Feed-Icons",
+  "homepage": "https://github.com/StylishThemes/GitHub-Feed-Icons",
+  "scripts": {
+    "authors": "bash tools/authors.sh"
+  }
+}
