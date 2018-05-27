@@ -29,7 +29,7 @@ The overall feed icon background and individual icon colors may be customized.
 
 ## Updating
 
-If a recent change broke the style, chances are that we already fixed it. Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/160546/github-feed-icons) or [GitHub](https://github.com/StylishThemes/GitHub-Feed-Icons/raw/master/gitHub-feed-icons.user.css) before opening an issue.
+If a recent change broke the style, chances are that we already fixed it. Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/160546/github-feed-icons) or [GitHub](https://github.com/StylishThemes/GitHub-Feed-Icons/raw/master/github-feed-icons.user.css) before opening an issue.
 
 ## Contributions
 
