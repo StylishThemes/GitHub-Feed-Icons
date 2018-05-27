@@ -2,6 +2,14 @@
 
 A simple userstyle that adds icons to the news feed.
 
+Please be aware that most feed entries have a generic class name applied:
+* An open pull request will show an issue opened icon.
+* A closed pull request, either merged or unmerged, will show an issue closed icon.
+* A reopened issue or pull request will show an issue reopened icon.
+* Issue and commit (review) comments will both show a comment icon.
+* Wiki edit and creation will show a book icon.
+* Repo creation and a repo made public will show the same repo icon.
+
 ## Preview
 
 This userstyle works great along side our [compact feed style](https://github.com/StylishThemes/GitHub-Compact-Feed), as seen in these screenshots.
