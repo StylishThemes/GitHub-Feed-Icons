@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name         GitHub Feed icons
+@name         {{title}}
 @version      {{version}}
-@description  Add icons to the GitHub news feed
+@description  {{description}}
 @namespace    github.com/openstyles/stylus
 @author       StylishThemes
-@homepageURL  https://github.com/StylishThemes/Github-Feed-Icons
-@supportURL   https://github.com/StylishThemes/Github-Feed-Icons/issues
-@updateURL    https://raw.githubusercontent.com/StylishThemes/Github-Feed-Icons/master/github-feed-icons.user.css
+@homepageURL  https://github.com/{{repository}}
+@supportURL   https://github.com/{{repository}}/issues
+@updateURL    https://raw.githubusercontent.com/{{repository}}/master/{{main}}
 @license      CC-BY-SA-4.0
 {{variables}}
 @preprocessor uso

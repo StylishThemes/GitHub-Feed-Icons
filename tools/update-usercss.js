@@ -3,6 +3,8 @@
 
 const fs = require("fs-extra");
 const path = require("path");
+
+const {replaceHolders, maxSize, pad} = require("./utils");
 const pkg = require("../package.json");
 
 const files = {
@@ -12,14 +14,6 @@ const files = {
 };
 
 const defaults = require(files.defaults);
-
-function maxSize(array) {
-  return array.reduce((acc, item) => Math.max(acc, item.length), 0);
-}
-
-function pad(len, str) {
-  return (str || "").padEnd(len);
-}
 
 function addVars(template, usercss) {
   const keys = Object.keys(defaults);
@@ -36,10 +30,12 @@ function addVars(template, usercss) {
     return `@advanced ${pad(typeLen, e.type)} ${pad(labelLen, e.label)} ` +
       `"${key}"${pad(keyLen - key.length)} ${v}`;
   }).join("\n");
-  return usercss
-    .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/, template)
-    .replace("{{version}}", pkg.version)
-    .replace("{{variables}}", vars);
+  return replaceHolders(
+    pkg,
+    usercss
+      .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/, template)
+      .replace("{{variables}}", vars)
+  );
 }
 
 function exit(err) {

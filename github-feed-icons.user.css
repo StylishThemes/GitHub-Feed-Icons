@@ -1,29 +1,28 @@
 /* ==UserStyle==
-@name         GitHub Feed icons
+@name         GitHub Feed Icons
 @version      1.0.0
 @description  Add icons to the GitHub news feed
 @namespace    github.com/openstyles/stylus
 @author       StylishThemes
-@homepageURL  https://github.com/StylishThemes/Github-Feed-Icons
-@supportURL   https://github.com/StylishThemes/Github-Feed-Icons/issues
-@updateURL    https://raw.githubusercontent.com/StylishThemes/Github-Feed-Icons/master/github-feed-icons.user.css
+@homepageURL  https://github.com/StylishThemes/GitHub-Feed-Icons
+@supportURL   https://github.com/StylishThemes/GitHub-Feed-Icons/issues
+@updateURL    https://raw.githubusercontent.com/StylishThemes/GitHub-Feed-Icons/master/github-feed-icons.user.css
 @license      CC-BY-SA-4.0
+@advanced color background     "Icon background"        #181818
+@advanced color branch-color   "Branch icon"            #fff
+@advanced color closed-color   "Closed issue/PR icon"   #f44
+@advanced color comment-color  "Comment icon"           #fff
+@advanced color follow-color   "Following icon"         #fff
+@advanced color fork-color     "Forked repo icon"       #fff
+@advanced color opened-color   "Opened issue/PR icon"   #6cc64
+@advanced color reopened-color "Reopen issue/PR icon"   #6cc64
+@advanced color repo-color     "Repo (new/public) icon" #6cc644
+@advanced color push-color     "Push icon"              #fff
+@advanced color star-color     "Starred icon"           #fbca04
+@advanced color tag-color      "Tag icon"               #fff
+@advanced color wiki-color     "Wiki icon"              #fff
 @preprocessor uso
-@var color background     'Icon background'        #181818
-@var color branch-color   'Branch icon'            #fff
-@var color closed-color   'Closed issue/PR icon'   #f44
-@var color comment-color  'Comment icon'           #fff
-@var color follow-color   'Following icon'         #fff
-@var color fork-color     'Forked repo icon'       #fff
-@var color opened-color   'Opened issue/PR icon'   #6cc644
-@var color reopened-color 'Reopen issue/PR icon'   #6cc644
-@var color repo-color     'Repo (new/public) icon' #6cc644
-@var color push-color     'Push icon'              #fff
-@var color star-color     'Starred icon'           #fbca04
-@var color tag-color      'Tag icon'               #fff
-@var color wiki-color     'Wiki icon'              #fff
 ==/UserStyle== */
-
 @-moz-document regexp("^https?:\\/\\/github\\.com(\\/)?$"), regexp("^https?:\\/\\/github\\.com\\/orgs\\/.*\\/dashboard(\\/)?$") {
   .news > div {
     position: relative;
