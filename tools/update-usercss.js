@@ -1,0 +1,58 @@
+#!/usr/bin/env node
+"use strict";
+
+const fs = require("fs-extra");
+const path = require("path");
+const pkg = require("../package.json");
+
+const files = {
+  defaults: path.join(__dirname, "..", "defaults.json"),
+  usercss: path.join(__dirname, "..", pkg.main),
+  template: path.join(__dirname, "usercss-template.css"),
+};
+
+const defaults = require(files.defaults);
+
+function maxSize(array) {
+  return array.reduce((acc, item) => Math.max(acc, item.length), 0);
+}
+
+function pad(len, str) {
+  return (str || "").padEnd(len);
+}
+
+function addVars(template, usercss) {
+  const keys = Object.keys(defaults);
+  const typeLen = maxSize(keys.map(key => defaults[key].type));
+  const labelLen = maxSize(keys.map(key => defaults[key].label));
+  const keyLen = maxSize(keys.map(key => key));
+  const vars = keys.map((key) => {
+    const e = defaults[key];
+    const v = e.type !== "dropdown" ?
+      e.value :
+      `{\n  ${Object.keys(e.value)
+        .map(o => `${o} "${o}" <<<EOT\n  ${e.value[o]} EOT;`)
+        .join("\n  ")}\n}`;
+    return `@advanced ${pad(typeLen, e.type)} ${pad(labelLen, e.label)} ` +
+      `"${key}"${pad(keyLen - key.length)} ${v}`;
+  }).join("\n");
+  return usercss
+    .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/, template)
+    .replace("{{version}}", pkg.version)
+    .replace("{{variables}}", vars);
+}
+
+function exit(err) {
+  if (err) console.error(err);
+  process.exit(err ? 1 : 0);
+}
+
+fs.readFile(files.template, "utf8")
+  .then(template =>
+    fs
+      .readFile(files.usercss, "utf8")
+      .then(usercss => addVars(template, usercss))
+  )
+  .then(css => fs.writeFile(files.usercss, css))
+  .then(() => console.log("\x1b[32m%s\x1b[0m", `${pkg.title} usercss update complete`))
+  .catch(exit);

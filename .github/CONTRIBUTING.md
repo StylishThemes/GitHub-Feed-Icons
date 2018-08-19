@@ -105,3 +105,4 @@ If you don't know CSS very well and have found a missing style, please include a
 * `npm run stylelint`: Run stylelint on the css file.
 * `npm run test`: Same as `npm run lint`.
 * `npm run update`: Update development dependencies.
+* `npm run usercss`: Update usercss variables using usercss template; variable data obtained from `defaults.json`.
