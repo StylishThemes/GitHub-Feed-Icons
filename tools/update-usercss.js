@@ -34,7 +34,7 @@ function addVars(template, usercss) {
   return replaceHolders(
     pkg,
     usercss
-      .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/, template)
+      .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/i, template)
       .replace("{{preprocessor}}", defaults.preprocessor || "uso")
       .replace("{{variables}}", variables)
   );
