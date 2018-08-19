@@ -24,25 +24,24 @@ The overall feed icon background and individual icon colors may be customized.
 
 ![](./images/customization.png)
 
-## Installing
+## Installation
 
-* If you're using a browser extension:
-  * Stylus - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) and [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).
-  * Stylish - get the addon for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/2108/), [Chrome](https://chrome.google.com/extensions/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe), [Opera](https://addons.opera.com/en/extensions/details/stylish/), [Safari](http://sobolev.us/stylish/) and [Firefox Mobile](https://addons.mozilla.org/en-US/firefox/addon/2108/).
-  * FreeStyler is available for [Chrome](https://chrome.google.com/webstore/detail/freestyler/hihigldmabkodfpehkgdemjklmaebmca).<br>
-  * Then install this style using:
-    * [userstyles.org](https://userstyles.org/styles/160546/github-feed-icons)
-    * or, add it [manually](https://github.com/StylishThemes/GitHub-Feed-Icons/blob/master/github-feed-icons.user.css) into the editor.
-* Or, **[install directly](https://raw.githubusercontent.com/StylishThemes/GitHub-Feed-Icons/master/github-feed-icons.user.css)** from this repository by opening the user.css file; only available using Stylus or FreeStyler (see the [documentation](https://github.com/openstyles/stylus/wiki/Usercss)). :tada:
+A userstyle extension is required, common ones include:
 
-## Updating
+🎨 Stylus for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/).<br>
+🎨 xStyle for [Firefox](https://addons.mozilla.org/firefox/addon/xstyle/) or [Chrome](https://chrome.google.com/webstore/detail/xstyle/hncgkmhphmncjohllpoleelnibpmccpj).
 
-If a recent change broke the style, chances are that we already fixed it. Make sure to reinstall from [userstyles.org](https://userstyles.org/styles/160546/github-feed-icons) or [GitHub](https://github.com/StylishThemes/GitHub-Feed-Icons/raw/master/github-feed-icons.user.css) before opening an issue.
+Then:
+
+📦 [Install the usercss](https://github.com/StylishThemes/GitHub-Feed-Icons/raw/master/github-feed-icons.user.css) with Stylus or xStyle. Supports automatic updates.
 
 ## Contributions
 
 If you would like to contribute to this repository, please...
 
-1. Fork
-2. Make changes (please read the [contribution guidelines](./.github/CONTRIBUTING.md) and abide by them)
-3. Create a pull request!
+1. 👓 Read the [contribution guidelines](CONTRIBUTING.md).
+2. ![repo-forked](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) [fork](https://github.com/StylishThemes/GitHub-Feed-Icons/fork) or ![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png)
+[Download](https://github.com/StylishThemes/GitHub-Feed-Icons/archive/master.zip),
+3. 👌 Create a pull request!
+
+Thanks to all that have [contributed](AUTHORS) so far!
