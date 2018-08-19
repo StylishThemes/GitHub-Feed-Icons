@@ -16,12 +16,13 @@ const files = {
 const defaults = require(files.defaults);
 
 function addVars(template, usercss) {
-  const keys = Object.keys(defaults);
-  const typeLen = maxSize(keys.map(key => defaults[key].type));
-  const labelLen = maxSize(keys.map(key => defaults[key].label));
+  const vars = defaults.variables;
+  const keys = Object.keys(vars);
+  const typeLen = maxSize(keys.map(key => vars[key].type));
+  const labelLen = maxSize(keys.map(key => vars[key].label));
   const keyLen = maxSize(keys.map(key => key));
-  const vars = keys.map((key) => {
-    const e = defaults[key];
+  const variables = keys.map((key) => {
+    const e = vars[key];
     const v = e.type !== "dropdown" ?
       e.value :
       `{\n  ${Object.keys(e.value)
@@ -34,7 +35,8 @@ function addVars(template, usercss) {
     pkg,
     usercss
       .replace(/\/\*\s==UserStyle[\s\S]+==\/UserStyle== \*\/\s+/, template)
-      .replace("{{variables}}", vars)
+      .replace("{{preprocessor}}", defaults.preprocessor || "uso")
+      .replace("{{variables}}", variables)
   );
 }
 

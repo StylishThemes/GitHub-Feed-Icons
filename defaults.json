@@ -1,67 +1,69 @@
 {
-  "Icon background": {
-    "type": "color",
-    "label": "background",
-    "value": "#181818"
-  },
-  "Branch icon":  {
-    "type": "color",
-    "label": "branch-color",
-    "value": "#fff"
-  },
-  "Closed issue/PR icon":  {
-    "type": "color",
-    "label": "closed-color",
-    "value": "#f44"
-  },
-  "Comment icon":  {
-    "type": "color",
-    "label": "comment-color",
-    "value": "#fff"
-  },
-  "Following icon":  {
-    "type": "color",
-    "label": "follow-color",
-    "value": "#fff"
-  },
-  "Forked repo icon":  {
-    "type": "color",
-    "label": "fork-color",
-    "value": "#fff"
-  },
-  "Opened issue/PR icon":  {
-    "type": "color",
-    "label": "opened-color",
-    "value": "#6cc64"
-  },
-  "Reopen issue/PR icon":  {
-    "type": "color",
-    "label": "reopened-color",
-    "value": "#6cc64"
-  },
-  "Repo (new/public) icon":  {
-    "type": "color",
-    "label": "repo-color",
-    "value": "#6cc644"
-  },
-  "Push icon":  {
-    "type": "color",
-    "label": "push-color",
-    "value": "#fff"
-  },
-  "Starred icon":  {
-    "type": "color",
-    "label": "star-color",
-    "value": "#fbca04"
-  },
-  "Tag icon":  {
-    "type": "color",
-    "label": "tag-color",
-    "value": "#fff"
-  },
-  "Wiki icon":  {
-    "type": "color",
-    "label": "wiki-color",
-    "value": "#fff"
+  "variables": {
+    "Icon background": {
+      "type": "color",
+      "label": "background",
+      "value": "#181818"
+    },
+    "Branch icon":  {
+      "type": "color",
+      "label": "branch-color",
+      "value": "#fff"
+    },
+    "Closed issue/PR icon":  {
+      "type": "color",
+      "label": "closed-color",
+      "value": "#f44"
+    },
+    "Comment icon":  {
+      "type": "color",
+      "label": "comment-color",
+      "value": "#fff"
+    },
+    "Following icon":  {
+      "type": "color",
+      "label": "follow-color",
+      "value": "#fff"
+    },
+    "Forked repo icon":  {
+      "type": "color",
+      "label": "fork-color",
+      "value": "#fff"
+    },
+    "Opened issue/PR icon":  {
+      "type": "color",
+      "label": "opened-color",
+      "value": "#6cc64"
+    },
+    "Reopen issue/PR icon":  {
+      "type": "color",
+      "label": "reopened-color",
+      "value": "#6cc64"
+    },
+    "Repo (new/public) icon":  {
+      "type": "color",
+      "label": "repo-color",
+      "value": "#6cc644"
+    },
+    "Push icon":  {
+      "type": "color",
+      "label": "push-color",
+      "value": "#fff"
+    },
+    "Starred icon":  {
+      "type": "color",
+      "label": "star-color",
+      "value": "#fbca04"
+    },
+    "Tag icon":  {
+      "type": "color",
+      "label": "tag-color",
+      "value": "#fff"
+    },
+    "Wiki icon":  {
+      "type": "color",
+      "label": "wiki-color",
+      "value": "#fff"
+    }
   }
 }
