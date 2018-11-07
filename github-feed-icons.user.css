@@ -24,7 +24,7 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("^https?:\\/\\/github\\.com(\\/)?$"), regexp("^https?:\\/\\/github\\.com\\/orgs\\/.*\\/dashboard(\\/)?$") {
-  .news > div {
+  .news > div > div {
     position: relative;
   }
   .news .commit_comment:after, .news .follow:after, .news .fork:after,
