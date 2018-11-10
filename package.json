@@ -1,19 +1,19 @@
 {
   "name": "github-feed-icons",
   "title": "GitHub Feed Icons",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Add icons to the GitHub news feed",
   "license": "CC-BY-SA-4.0",
   "repository": "https://github.com/StylishThemes/GitHub-Feed-Icons",
   "homepage": "https://github.com/StylishThemes/GitHub-Feed-Icons",
   "main": "github-feed-icons.user.css",
   "devDependencies": {
-    "eslint": "^5.8.0",
+    "eslint": "^5.9.0",
     "eslint-config-silverwind": "^2.0.10",
     "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
     "semver": "^5.6.0",
-    "stylelint": "^9.7.1",
+    "stylelint": "^9.8.0",
     "stylelint-config-standard": "^18.2.0",
     "updates": "^5.1.2"
   },
