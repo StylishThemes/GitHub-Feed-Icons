@@ -24,8 +24,14 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document regexp("^https?:\\/\\/github\\.com(\\/)?$"), regexp("^https?:\\/\\/github\\.com\\/orgs\\/.*\\/dashboard(\\/)?$") {
-  .news > div > div {
+  .news .commit_comment, .news .follow, .news .fork, .news .git-branch,
+  .news .gollum, .news .issues_closed, .news .issues_comment,
+  .news .issues_opened, .news .issues_reopened, .news .public, .news .push,
+  .news .repo, .news .tag, .news .watch_started {
     position: relative;
+  }
+  .news .body div {
+    position: static;
   }
   .news .commit_comment:after, .news .follow:after, .news .fork:after,
   .news .git-branch:after, .news .gollum:after, .news .issues_closed:after,
