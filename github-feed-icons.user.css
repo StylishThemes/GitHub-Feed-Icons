@@ -14,8 +14,8 @@
 @advanced color comment-color  "Comment icon"           #fff
 @advanced color follow-color   "Following icon"         #fff
 @advanced color fork-color     "Forked repo icon"       #fff
-@advanced color opened-color   "Opened issue/PR icon"   #6cc64
-@advanced color reopened-color "Reopen issue/PR icon"   #6cc64
+@advanced color opened-color   "Opened issue/PR icon"   #6cc644
+@advanced color reopened-color "Reopen issue/PR icon"   #6cc644
 @advanced color repo-color     "Repo (new/public) icon" #6cc644
 @advanced color push-color     "Push icon"              #fff
 @advanced color star-color     "Starred icon"           #fbca04
