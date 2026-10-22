@@ -1,3 +1,5 @@
+**Retired:** this style no longer matches GitHub's current markup.
+
 # GitHub Feed Icons [![tag](https://img.shields.io/github/tag/StylishThemes/GitHub-Feed-Icons.svg)](https://github.com/StylishThemes/GitHub-Feed-Icons/tags)
 
 A simple userstyle that adds icons to the news feed.
